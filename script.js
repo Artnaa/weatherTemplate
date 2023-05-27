@@ -18,7 +18,6 @@ let weather = {
 
         var elementWeather = document.querySelector('.weather')
         elementWeather.classList.add('aactive');
-        console.log(elementWeather);
       })
 
   },
