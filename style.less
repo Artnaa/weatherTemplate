@@ -1,0 +1,87 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #222;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(https://source.unsplash.com/random/1600×900/?sunset);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  color: white;
+  background: rgba(29, 28, 28, 0.71);
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+
+
+  #catchText {
+    display: none;
+
+    &.active {
+      display: block;
+
+    }
+
+  }
+
+  .weather{
+    display: block;
+    
+    &.aactive{
+      display: none;
+    }
+  }
+
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .search_bar {
+    border: none;
+    outline: none;
+    padding: 0.7em;
+    padding-right: 2em;
+    border-radius: 18px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 120%;
+    transition: .5s;
+    width: 100%-20px;
+
+    &:hover {
+      background: #7c7c7c6b;
+    }
+  }
+
+  button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    padding: 2px;
+    outline: none;
+    cursor: pointer;
+    background: #7c7c7c2b;
+    transition: .5s ease-in-out;
+
+
+    i {
+      font-size: 25px;
+      padding: 20px;
+      color: white;
+    }
+
+    &:hover {
+      background: #7c7c7c6b;
+    }
+  }
+}
